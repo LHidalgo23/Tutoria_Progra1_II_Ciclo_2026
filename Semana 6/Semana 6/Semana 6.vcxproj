@@ -139,7 +139,25 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="ContenedorForma4Cliente.cpp" />
+    <ClCompile Include="ContenedorForma4Cuenta.cpp" />
+    <ClCompile Include="Controladora.cpp" />
+    <ClCompile Include="Cuenta.cpp" />
+    <ClCompile Include="Generador.cpp" />
+    <ClCompile Include="Interfaz.cpp" />
     <ClCompile Include="Semana 6.cpp" />
+    <ClCompile Include="Transaccion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cliente.h" />
+    <ClInclude Include="ContenedorForma4Cliente.h" />
+    <ClInclude Include="ContenedorForma4Cuenta.h" />
+    <ClInclude Include="Controladora.h" />
+    <ClInclude Include="Cuenta.h" />
+    <ClInclude Include="Generador.h" />
+    <ClInclude Include="Interfaz.h" />
+    <ClInclude Include="Transaccion.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

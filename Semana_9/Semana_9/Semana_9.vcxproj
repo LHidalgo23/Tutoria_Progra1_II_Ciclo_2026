@@ -140,19 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Estudiante.cpp" />
-    <ClCompile Include="ListaEnlazada.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Nodo.cpp" />
-    <ClCompile Include="NodoPersona.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Profesor.cpp" />
     <ClCompile Include="Semana_9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Estudiante.h" />
-    <ClInclude Include="ListaEnlazada.h" />
-    <ClInclude Include="Nodo.h" />
-    <ClInclude Include="NodoPersona.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Profesor.h" />
   </ItemGroup>

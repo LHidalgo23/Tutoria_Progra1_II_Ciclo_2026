@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Zoologico/Zoologico.vcxproj" Id="f26e3912-46b2-4e4c-8179-80d9fa1a7618" />
+</Solution>

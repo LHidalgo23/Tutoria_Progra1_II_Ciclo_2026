@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Contenedor_Matricial/Contenedor_Matricial.vcxproj" Id="6e3efa9d-5925-42ac-a3d3-4869d97126aa" />
+  <Project Path="Demeter_Mal_Ejemplo/Demeter_Mal_Ejemplo.vcxproj" Id="54995ddc-2665-462e-9f86-0e5788ee5cbb" />
+  <Project Path="Demeter_Buen_Ejemplo/Demeter_Buen_Ejemplo.vcxproj" Id="ea56a47a-8a2c-40c1-84c2-cd8886083c4a" />
+</Solution>

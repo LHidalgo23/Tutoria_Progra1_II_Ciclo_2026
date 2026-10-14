@@ -1,0 +1,25 @@
+# Visual Studio / C++ : archivos generados que NO se suben al repositorio
+.vs/
+x64/
+x86/
+Debug/
+Release/
+[Bb]in/
+[Oo]bj/
+ipch/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.tlog
+*.log
+*.recipe
+*.suo
+*.user
+*.vsidx
+*.VC.db
+*.d.json
+*.module.json
+*.command

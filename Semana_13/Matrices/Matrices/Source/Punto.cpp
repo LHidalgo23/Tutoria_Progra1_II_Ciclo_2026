@@ -7,39 +7,32 @@
 
 #include "Punto.h"   // Trae la declaración de la clase que vamos a implementar
 
-// Constructor.
-// Los parámetros se llaman igual que los atributos (x, y). En la lista de
-// inicialización  x(x)  significa: "el atributo x recibe el valor del
-// parámetro x".
-Punto::Punto(int x, int y) : x(x), y(y) {}
+// Constructor. En la lista de inicialización, y(y) significa:
+// "el atributo y recibe el valor del parámetro y".
+Punto::Punto(int y, int x) : y(y), x(x) {}
 
-// Getter de x: devuelve la coordenada x (en la matriz, la fila).
-// El const al final indica que este método no modifica el objeto.
-int Punto::getX() const {
-  return x;
-}
-
-// Getter de y: devuelve la coordenada y (en la matriz, la columna).
+// Getter de y: devuelve la fila.
 int Punto::getY() const {
-  return y;
+	return y;
 }
 
-// Setter de x.
-// Como el parámetro y el atributo se llaman igual, se usa this->x para
-// referirse al ATRIBUTO del objeto y x (sola) para el PARÁMETRO.
-void Punto::setX(int x) {
-  this->x = x;
+// Getter de x: devuelve la columna.
+int Punto::getX() const {
+	return x;
 }
 
-// Setter de y (misma idea que setX).
 void Punto::setY(int y) {
-  this->y = y;
+	this->y = y;
 }
 
-// Convierte el Punto a texto con el formato (x,y).
-// Ejemplo: Punto(0,3) -> "(0,3)"
+void Punto::setX(int x) {
+	this->x = x;
+}
+
+// Convierte el Punto a texto con el formato (y,x), el mismo orden que mat[y][x].
+// Ejemplo: Punto(1,2) -> "(1,2)"
 string Punto::toString() {
-  stringstream ss;
-  ss << "(" << x << "," << y << ")";
-  return ss.str();
+	stringstream ss;
+	ss << "(" << y << "," << x << ")";
+	return ss.str();
 }

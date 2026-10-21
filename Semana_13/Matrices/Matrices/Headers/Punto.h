@@ -16,18 +16,24 @@
 
 using namespace std;  // Permite escribir string, cout, endl sin el prefijo std::
 
+// Propósito: Declara la clase Punto, que representa una posición en la matriz.
+//            Se escribe en el mismo orden que mat[fila][columna]:
+//              y = número de fila    (eje vertical, crece hacia abajo)
+//              x = número de columna (eje horizontal, crece hacia la derecha)
+//            Ejemplo: la Persona en mat[1][2] es el Punto(1,2): y=1, x=2.
+
 class Punto {
-  private:
-    int x, y;                 // Coordenadas del punto (en la matriz: fila y columna)
+private:
+    int y, x;                 // y = fila, x = columna
 
-  public:
-    Punto(int x, int y);      // Constructor: recibe ambas coordenadas
+public:
+    Punto(int y, int x);      // Constructor: primero la fila (y), luego la columna (x)
 
-    int getX() const;         // Getter de x ("const": no modifica el objeto)
-    int getY() const;         // Getter de y ("const": no modifica el objeto)
+    int getY() const;         // Getter de y (la fila)
+    int getX() const;         // Getter de x (la columna)
 
-    void setX(int x);         // Setter de x: cambia el valor de x
-    void setY(int y);         // Setter de y: cambia el valor de y
+    void setY(int y);         // Setter de y
+    void setX(int x);         // Setter de x
 
-    string toString();        // Devuelve el punto como texto, ej: "(0,3)"
+    string toString();        // Devuelve el punto como texto "(y,x)", ej: "(1,2)"
 };

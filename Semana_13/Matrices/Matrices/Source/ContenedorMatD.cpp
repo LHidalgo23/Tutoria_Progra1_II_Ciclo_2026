@@ -11,9 +11,9 @@
 // Recibe la cantidad de filas (f) y de columnas (c) y arma una matriz vacía.
 ContenedorMatD::ContenedorMatD(int f, int c) {
   filas = f;       // Guarda las dimensiones
-  columnas = c;
+  columnas = c;    //Tamano
   fil = 0;         // El cursor de inserción empieza en la celda (0,0)
-  col = 0;
+  col = 0;        //cantidad = 0
 
   // Paso 1: reservar el arreglo de filas. Cada elemento es un Persona**
   // (un puntero al arreglo de punteros de esa fila).
@@ -22,9 +22,9 @@ ContenedorMatD::ContenedorMatD(int f, int c) {
   // Paso 2: para cada fila reservar su arreglo de punteros a Persona
   // (las columnas) y dejar todas las celdas en nullptr, o sea, vacías.
   for (int i = 0; i < filas; i++) {
-    mat[i] = new Persona*[columnas];
+    mat[i] = new Persona*[columnas]; //Estructura
     for (int j = 0; j < columnas; j++) {
-      mat[i][j] = nullptr;
+      mat[i][j] = nullptr; //Direcciones de las personas
     }
   }
 }
@@ -58,7 +58,7 @@ string ContenedorMatD::toString() {
       if (mat[i][j] != nullptr) {
         ss << mat[i][j]->toString();   // Celda ocupada: nombre de la Persona
       } else {
-        ss << "N ";                    // Celda vacía
+        ss << "Null ";                    // Celda vacía
       }
     }
     ss << endl;   // Salto de línea al terminar cada fila
@@ -72,13 +72,7 @@ string ContenedorMatD::toString() {
 // Las variables fil y col son el "cursor" que recuerda en cuál celda
 // toca insertar la próxima vez.
 void ContenedorMatD::inserTarPorFila(Persona *persona) {
-  // 1. Se guarda la Persona solo si el cursor está dentro de la matriz y la
-  //    celda está libre (nullptr).
-  //    Ojo: si la celda estuviera ocupada, la Persona recibida NO se guarda
-  //    y el contenedor no la libera (quedaría sin dueño).
-  if (fil < filas
-    && col < columnas
-    && mat[fil][col] == nullptr) {
+ if (fil < filas && col < columnas && mat[fil][col] == nullptr) {
       mat[fil][col] = persona;
     }
 

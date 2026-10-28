@@ -29,7 +29,7 @@ class ContenedorMatD {
   private:
     Persona *** mat;            // Matriz dinámica de punteros a Persona
     int filas, columnas;        // Dimensiones de la matriz
-    int fil, col;               // "Cursor": posición donde se insertará la próxima
+    int fil, col;    //Cantidad // "Cursor": posición donde se insertará la próxima
                                 // Persona (fila y columna actuales)
 
   public:
